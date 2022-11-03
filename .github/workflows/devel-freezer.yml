@@ -22,6 +22,8 @@ jobs:
       
       - shell: bash
         run: |
+          ls
+          git -P log
           git -P tag --sort=committerdate
 
       - name: Development Freezer
