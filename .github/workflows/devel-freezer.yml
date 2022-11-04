@@ -23,6 +23,6 @@ jobs:
           fetch-depth: 0
 
       - name: Development Freezer
-        uses: redhat-plumbers-in-action/devel-freezer@latest
+        uses: jamacku/devel-freezer@fix-tags
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
