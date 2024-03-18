@@ -36,7 +36,7 @@ jobs:
           fetch-depth: 0
 
       - name: Development Freezer
-        uses: redhat-plumbers-in-action/devel-freezer@feat-milestone-support
+        uses: jamacku/devel-freezer@feat-milestone-support
         with:
           pr-number: ${{ fromJSON(steps.Artifact.outputs.pr-metadata-json).number }}
           token: ${{ secrets.GITHUB_TOKEN }}
