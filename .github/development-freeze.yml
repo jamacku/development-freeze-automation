@@ -12,6 +12,8 @@ policy:
 
   # Suport for regular expressions
   - tags: ['^\S*-rc\d$']
+    labels:
+      allow: ['regression ⚠️']
     feedback:
       frozen-state: |
         > [!IMPORTANT]
