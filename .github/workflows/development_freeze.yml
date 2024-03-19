@@ -39,4 +39,5 @@ jobs:
         uses: jamacku/devel-freezer@support-labels
         with:
           pr-number: ${{ fromJSON(steps.Artifact.outputs.pr-metadata-json).number }}
+          delay: 120
           token: ${{ secrets.GITHUB_TOKEN }}
